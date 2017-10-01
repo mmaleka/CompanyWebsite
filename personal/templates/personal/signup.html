@@ -1,0 +1,47 @@
+{% extends "personal/foundation.html" %}
+{% block content %}
+
+<body>
+
+
+  <!-- Container (Contact Section) -->
+  <div class="container-fluid">
+
+    <div class="row">
+      <form role="form" action="" method="post">
+      {% csrf_token %}
+      <div class="col-sm-8">
+
+        <div class="row">
+          <div class="col-md-6 col-md-offset-6 form-group">
+            <h2 class="text-center">Sign Up</h2>
+            <hr>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-6 col-md-offset-6 form-group">
+            {{ form.contact_name }}
+          </div>
+        </div>
+        <div class="row">
+          <!--<div class="col-md-4">.col-md-4</div>-->
+          <div class="col-md-6 col-md-offset-6 form-group">
+            {{ form.contact_email }}
+          </div>
+        </div>
+        <br>
+        <div class="row">
+          <div class="col-md-6 col-md-offset-6 form-group">
+            <button class="btn btn-default pull-right" type="submit">Sign up</button>
+          </div>
+        </div>
+      </div>
+      </form>
+    </div>
+  </div>
+
+
+</body>
+
+{% endblock %}

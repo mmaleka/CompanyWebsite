@@ -1,0 +1,40 @@
+{% extends "personal/foundation.html" %}
+{% block content %}
+
+
+<!-- Container (Contact Section) -->
+<div class="container-fluid">
+  <h2 class="text-center">CONTACT US</h2>
+  <hr>
+  <div class="row">
+    <div class="col-sm-5">
+      <p>Contact us and we'll get back to you within 24 hours.</p>
+      <p><span class="glyphicon glyphicon-map-marker"></span> Johannesburg, South Africa</p>
+      <p><span class="glyphicon glyphicon-phone"></span> 082 904 6234</p>
+      <p><span class="glyphicon glyphicon-envelope"></span> mpho.maleka3@gmail.com</p>
+    </div>
+    <form role="form" action="" method="post">
+    {% csrf_token %}
+    <div class="col-sm-7">
+      <div class="row">
+        <div class="col-sm-6 form-group">
+          {{ form.contact_name }}
+        </div>
+        <div class="col-sm-6 form-group">
+          {{ form.contact_email }}
+        </div>
+      </div>
+          {{ form.content }}
+      <br>
+      <div class="row">
+        <div class="col-sm-12 form-group">
+          <button class="btn btn-default pull-right" type="submit">Send</button>
+        </div>
+      </div>
+    </div>
+    </form>
+  </div>
+</div>
+
+
+{% endblock %}
