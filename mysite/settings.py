@@ -25,7 +25,7 @@ SECRET_KEY = 'z%_%46j7hw3(u7e#&x3f!6t582%m8)5-f-higwctqmz*2h9zpe'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['mmaleka.pythonanywhere.com', '127.0.0.1']
+ALLOWED_HOSTS = ['mmaleka.pythonanywhere.com', '127.0.0.1', 'www.code-a-drone.co.za']
 
 
 # Application definition
